@@ -1,0 +1,31 @@
+{
+  "name": "starter-next-express-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^2.14.0",
+    "express": "^4.17.1",
+    "gray-matter": "^4.0.2",
+    "next": "^9.4.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "remark": "^12.0.0",
+    "remark-html": "^11.0.2"
+  },
+  "scripts": {
+    "dev": "ts-node --project tsconfig.server.json server/index.ts",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:next": "next build",
+    "build": "npm run build:next && npm run build:server",
+    "start": "NODE_ENV=production node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/date-fns": "^2.6.0",
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.13",
+    "@types/react": "^16.9.38",
+    "ts-node": "^8.10.2",
+    "typescript": "3.8.3"
+  }
+}
